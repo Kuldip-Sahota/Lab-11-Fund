@@ -92,3 +92,10 @@ class Store {
         return this.inventory.reduce((total, product) => total + product.getTotalValue(), 0);
     }
 }
+class Store {
+    // Existing methods...
+
+    findProductByName(name) {
+        return this.inventory.find(product => product.name === name) || null;
+    }
+}
