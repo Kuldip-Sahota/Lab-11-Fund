@@ -12,7 +12,6 @@
     <script src="ProductProperties.js"></script>
 
     <script>
-        // Create Product instances after ProductProperties class is defined
         const apple = new ProductProperties("Apple", 2.5, 50);
         const banana = new ProductProperties("Banana", 1.2, 100);
         const milk = new PerishableProductProperties("Milk", 1.5, 10, "2024-12-31");
@@ -29,21 +28,7 @@
         console.log("Before Discount:");
         products.forEach(product => console.log(product.toString()));
 
-        ProductProperties.applyDiscount(products, 0.15);
-
-        console.log("\nAfter Discount:");
-        products.forEach(product => console.log(product.toString()));
-
-        const store = new Store();
-        store.addProduct(apple);
-        store.addProduct(banana);
-        store.addProduct(milk);
-        store.addProduct(yogurt);
-        store.addProduct(cheese);
-
-        console.log("Total Inventory Value:", store.getInventoryValue());
-        console.log("Find Milk:", store.findProductByName("Milk").toString());
+        ProductProperties.applyDiscount(products, 0.15); // Apply 15% discount
     </script>
 </body>
 </html>
-
