@@ -68,3 +68,11 @@ class ProductProperties {
         });
     }
 }
+const products = [apple, banana, milk, yogurt, cheese];
+console.log("Before Discount:");
+products.forEach(product => console.log(product.toString()));
+
+ProductProperties.applyDiscount(products, 0.15); // Apply 15% discount
+
+console.log("\nAfter Discount:");
+products.forEach(product => console.log(product.toString()));
