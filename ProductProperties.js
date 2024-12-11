@@ -99,3 +99,12 @@ class Store {
         return this.inventory.find(product => product.name === name) || null;
     }
 }
+const store = new Store();
+store.addProduct(apple);
+store.addProduct(banana);
+store.addProduct(milk);
+store.addProduct(yogurt);
+store.addProduct(cheese);
+
+console.log("Total Inventory Value:", store.getInventoryValue());
+console.log("Find Milk:", store.findProductByName("Milk").toString());
