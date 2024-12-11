@@ -57,4 +57,5 @@ console.log(milk.toString());
 console.log(yogurt.toString());
 const apple = new ProductProperties("Apple", 2.5, 50);
 const banana = new ProductProperties("Banana", 1.2, 100);
+const cheese = new PerishableProductProperties("Cheese", 4.0, 20, "2024-12-15");
 
