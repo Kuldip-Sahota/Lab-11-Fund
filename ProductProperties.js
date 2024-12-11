@@ -33,7 +33,7 @@ class PerishableProductProperties extends ProductProperties {
     }
 }
 
-// Create Instances (without redeclaring variables)
+// Create Instances (only declare once)
 let apple = new ProductProperties("Apple", 2.5, 50);
 let banana = new ProductProperties("Banana", 1.2, 100);
 let milk = new PerishableProductProperties("Milk", 1.5, 10, "2024-12-31");
@@ -88,4 +88,5 @@ store.addProduct(cheese);
 // Log total inventory value
 console.log("Total Inventory Value:", store.getInventoryValue());
 console.log("Find Milk:", store.findProductByName("Milk").toString());
+
 
