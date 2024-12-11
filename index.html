@@ -3,32 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Management</title>
+    <title>Inventory Management System</title>
 </head>
 <body>
-
-    <h1>Product Management System</h1>
-
-    <script src="ProductProperties.js"></script>
-
-    <script>
-        const apple = new ProductProperties("Apple", 2.5, 50);
-        const banana = new ProductProperties("Banana", 1.2, 100);
-        const milk = new PerishableProductProperties("Milk", 1.5, 10, "2024-12-31");
-        const yogurt = new PerishableProductProperties("Yogurt", 2.0, 5, "2024-12-20");
-        const cheese = new PerishableProductProperties("Cheese", 4.0, 20, "2024-12-15");
-
-        console.log(apple.toString());
-        console.log("Total Value:", apple.getTotalValue());
-
-        console.log(milk.toString());
-        console.log(yogurt.toString());
-
-        const products = [apple, banana, milk, yogurt, cheese];
-        console.log("Before Discount:");
-        products.forEach(product => console.log(product.toString()));
-
-        ProductProperties.applyDiscount(products, 0.15); // Apply 15% discount
-    </script>
+    <h1>Inventory Management System</h1>
+    <script src="ProductProperties.js"></script> <!-- Link to your JS file -->
 </body>
 </html>
