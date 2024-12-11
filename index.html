@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+</head>
+<body>
+    <h1>Inventory Management System</h1>
+    
+    <!-- Link to the JavaScript file -->
+    <script src="ProductProperties.js"></script>
+    
+    <script>
+        const apple = new ProductProperties("Apple", 2.5, 50);
+        const banana = new ProductProperties("Banana", 1.2, 100);
+        
+        console.log(apple.toString());  
+        console.log("Total Value:", apple.getTotalValue());  // Log the total value of the apple
+
+        // Sample test: Apply discount to all products
+        const products = [apple, banana];
+        ProductProperties.applyDiscount(products, 0.1); // Apply 10% discount
+
+        // Display updated product details
+        products.forEach(product => {
+            console.log(product.toString());
+        });
+    </script>
+</body>
+</html>
